@@ -1,0 +1,45 @@
+adds (i = optional):
+creates a new ith semester (if i not included, new semester created at the first null spot)
+note: positions start at index 1
+
+drops (i):
+clears semester at position i
+note: positions start at index 1
+
+addc(s,c,t):
+adds course with code c of type t* in semester c
+note: to count in the assessment, t must be one of the following values (not case-sensitive):
+*LL = Lower Liberal
+*UL = Upper Liberal
+*REQ = Required Course
+*OE = Open Elective
+*PR-CS = Professionally Related: CS Group
+*PR-ESB = Professionally Related: ENG/SCI/BUS Group
+*PR-MTH = Professionally Related: Math Group
+
+dropc (c):
+drops course with code c from planner
+
+grade (c,g):
+grades course with code c with letter grade g. Will be converted into Grade Points
+
+cgpa:
+returns cumulative GPA across all semesters and all courses
+
+assess:
+shows how much of each course type user has enrolled in, and how many they need
+
+views (i):
+displays code, type, and grade of all courses as well as the GPA of the semester
+
+viewc (c):
+displays code, type, and grade of course with code c
+
+save:
+saves planner and relevant objects into save file
+
+load:
+loads planner and relevant objects from save file into the program
+
+quit:
+terminates program
