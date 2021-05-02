@@ -19,7 +19,7 @@ public class Planner implements java.io.Serializable{
     }
 
     public void removeSem(int i){
-        if (i > 8 || i < 1){
+        if (i > 7 || i < 0){
             System.out.println("Improper Bound Given");
         }
         else{
